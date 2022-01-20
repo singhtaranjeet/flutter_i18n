@@ -16,46 +16,45 @@ class ScientistCard extends StatelessWidget {
             lastDate: DateTime(2030));
       },
       child: Container(
-        padding: const EdgeInsets.all(10),
-        child: Row(
-          children: [
-            const CircleAvatar(),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+          padding: const EdgeInsets.all(10),
+          child: Row(
+            children: [
+              const CircleAvatar(),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Text(
+                      "Name",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 4),
+                    Text("Invention")
+                  ],
+                ),
+              ),
+              Column(
                 children: const [
                   Text(
-                    "Name",
+                    "Country",
                     style: TextStyle(
-                      fontWeight: FontWeight.w500,
+                      fontSize: 12,
                     ),
                   ),
                   SizedBox(height: 4),
-                  Text("Invention")
+                  Text(
+                    "Year",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
+                  ),
                 ],
-              ),
-            ),
-            Column(
-              children: const [
-                Text(
-                  "Country",
-                  style: TextStyle(
-                    fontSize: 12,
-                  ),
-                ),
-                SizedBox(height: 4),
-                Text(
-                  "Year",
-                  style: TextStyle(
-                    fontSize: 12,
-                  ),
-                ),
-              ],
-            )
-          ],
-        ),
-      ),
+              )
+            ],
+          )),
     );
   }
 }
