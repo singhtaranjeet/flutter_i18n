@@ -7,7 +7,15 @@ class ScientistCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return InkWell(
+      onTap: () {
+        showDatePicker(
+            context: context,
+            initialDate: DateTime.now(),
+            firstDate: DateTime(1760),
+            lastDate: DateTime(2030));
+      },
+      child: Container(
         padding: const EdgeInsets.all(10),
         child: Row(
           children: [
@@ -46,6 +54,8 @@ class ScientistCard extends StatelessWidget {
               ],
             )
           ],
-        ));
+        ),
+      ),
+    );
   }
 }
