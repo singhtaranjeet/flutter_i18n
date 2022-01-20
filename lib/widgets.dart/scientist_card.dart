@@ -1,4 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/generated/locale_keys.g.dart';
 import 'package:flutter_i18n/model/scientist.dart';
 
 class ScientistCard extends StatelessWidget {
@@ -24,30 +26,30 @@ class ScientistCard extends StatelessWidget {
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
-                    "Name",
-                    style: TextStyle(
+                    LocaleKeys.scientistName.tr(),
+                    style: const TextStyle(
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: 4),
-                  Text("Invention")
+                  const SizedBox(height: 4),
+                  Text(LocaleKeys.scientistInvention.tr())
                 ],
               ),
             ),
             Column(
-              children: const [
+              children: [
                 Text(
-                  "Country",
-                  style: TextStyle(
+                  LocaleKeys.scientistCountry.tr(),
+                  style: const TextStyle(
                     fontSize: 12,
                   ),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Text(
-                  "Year",
-                  style: TextStyle(
+                  LocaleKeys.scientistYear.tr(),
+                  style: const TextStyle(
                     fontSize: 12,
                   ),
                 ),

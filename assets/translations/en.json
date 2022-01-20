@@ -1,0 +1,8 @@
+{
+    "scientists": "Scientists",
+    "scientistsScreenScaffoldMessage": "Let's pretend this app contains infomation related to scientists and their inventions",
+    "scientistName": "Name",
+    "scientistInvention": "Invention",
+    "scientistCountry": "Country",
+    "scientistYear": "Year"
+}
