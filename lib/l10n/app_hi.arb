@@ -1,3 +1,8 @@
 {
-    "scientists": "वैज्ञानिक"
+    "scientists": "वैज्ञानिक",
+    "scientistsScreenScaffoldMessage": "मान लो की यह ऐप वैज्ञानिकों और उनके आविष्कारों से संबंधित जानकारी दिखाता है",
+    "scientistName": "नाम",
+    "scientistInvention": "आविष्कार",
+    "scientistCountry": "देश",
+    "scientistYear": "वर्ष"
 }
