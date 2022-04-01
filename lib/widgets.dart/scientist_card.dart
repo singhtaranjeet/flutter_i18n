@@ -1,3 +1,4 @@
+import 'package:csv_localizations/csv_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_i18n/model/scientist.dart';
 
@@ -24,30 +25,30 @@ class ScientistCard extends StatelessWidget {
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
-                    "Name",
-                    style: TextStyle(
+                    CsvLocalizations.instance.string("scientistName"),
+                    style: const TextStyle(
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: 4),
-                  Text("Invention")
+                  const SizedBox(height: 4),
+                  Text(CsvLocalizations.instance.string("scientistInvention"))
                 ],
               ),
             ),
             Column(
-              children: const [
+              children: [
                 Text(
-                  "Country",
-                  style: TextStyle(
+                  CsvLocalizations.instance.string("scientistCountry"),
+                  style: const TextStyle(
                     fontSize: 12,
                   ),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Text(
-                  "Year",
-                  style: TextStyle(
+                  CsvLocalizations.instance.string("scientistYear"),
+                  style: const TextStyle(
                     fontSize: 12,
                   ),
                 ),

@@ -1,3 +1,4 @@
+import 'package:csv_localizations/csv_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_i18n/model/scientist.dart';
 import 'package:flutter_i18n/widgets.dart/scientist_card.dart';
@@ -11,7 +12,7 @@ class ScientistsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Scientists"),
+        title: Text(CsvLocalizations.instance.string("scientists")),
         actions: [
           IconButton(
               icon: const Icon(Icons.change_circle_outlined),
@@ -22,15 +23,16 @@ class ScientistsPage extends StatelessWidget {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Row(
-                    children: const [
-                      Icon(
+                    children: [
+                      const Icon(
                         Icons.insert_emoticon_rounded,
                         color: Colors.purple,
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          "Let's pretend this app contains infomation related to scientists and their inventions",
+                          CsvLocalizations.instance
+                              .string("scientistsScreenScaffoldMessage"),
                         ),
                       ),
                     ],
